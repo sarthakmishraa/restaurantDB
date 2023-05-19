@@ -1,0 +1,201 @@
+body {
+  background-color: #111;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+/*navbar styling*/
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: gray;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: gray;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+/*  background-color: #04AA6D;*/
+  background-color: black;
+  color: white;
+}
+
+
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #fff;
+}
+
+th {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #333;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #444;
+}
+
+input[type="text"], input[type="submit"] {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+input[type="submit"] {
+  background-color: #ff9800;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+form input[type="text"] {
+  width: 200px;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: "Merriweather", serif;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 5px;
+  }
+
+  form input[type="text"] {
+    width: 100%;
+  }
+
+  input[type="text"], input[type="submit"] {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  table {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  form input[type="text"] {
+    width: 60%;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  table {
+    width: 70%;
+    font-size: 18px;
+  }
+
+  form input[type="text"] {
+    width: 50%;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up

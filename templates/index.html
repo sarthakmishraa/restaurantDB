@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>CSE 560 DMQL Group Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="{{ url_for('index', filename='index.html') }}">Home</a>
+
+      <a href="{{ url_for('res') }}">Restaurant</a>
+      <a href="{{ url_for('res_info') }}">Restaurant Information</a>
+      <a href="{{ url_for('owner') }}">Owner</a>
+      <a href="{{ url_for('cuisines') }}">Cuisines</a>
+      <a href="{{ url_for('menu_items') }}">Menu Items</a>
+      <a href="{{ url_for('reviews') }}">Reviews</a>
+    </div>
+    <h1>CSE 560 DMQL Group Project</h1>
+    <h1>Meet Our Squad</h1>
+
+    <div class="team-container">
+      <div class="member">
+        <h2>Prakhar Bhatnagar</h2>
+        <p>Collaborator</p>
+        <p>UBIT name: pbhatnag</p>
+        <p>Person Number: 50475565</p>
+      </div>
+
+      <div class="member">
+        <h2>Rahul Nimbalkar</h2>
+        <p>Collaborator</p>
+        <p>UBIT name: rahulpun</p>
+        <p>Person Number: 50442941</p>
+      </div>
+
+      <div class="member">
+        <h2>Sarthak Mishra</h2>
+        <p>Collaborator</p>
+        <p>UBIT name: mishra23</p>
+        <p>Person Number: 50475793</p>
+      </div>
+    </div>
+    
+  <div id="footer">
+    <p>&copy; 2023 SARTHAK MISHRA</p>
+  </div>
+  </body>
+</html>

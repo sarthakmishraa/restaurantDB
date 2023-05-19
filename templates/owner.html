@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <title>Restaurants DB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="{{ url_for('index') }}">Home</a>
+
+      <a href="{{ url_for('res') }}">Restaurant</a>
+      <a href="{{ url_for('res_info') }}">Restaurant Information</a>
+      <a class="active" href="{{ url_for('owner') }}">Owner</a>
+      <a href="{{ url_for('cuisines') }}">Cuisines</a>
+      <a href="{{ url_for('menu_items') }}">Menu Items</a>
+      <a href="{{ url_for('reviews') }}">Reviews</a>
+    </div>
+    <!-- owner table -->
+    <h1>Restaurants DB</h1>
+    <h2>Relation : owner</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>res_id</th>
+          <th>owner name</th>
+          <th>owner address</th>
+          <th>owner city</th>
+          <th>owner zip code</th>
+          <th>owner phone number</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in owner_data %}
+        <tr>
+          <td>{{ row[0] }}</td>
+          <td>{{ row[1] }}</td>
+          <td>{{ row[2] }}</td>
+          <td>{{ row[3] }}</td>
+          <td>{{ row[4] }}</td>
+          <td>{{ row[5] }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    
+  <div id="footer">
+    <p>&copy; 2023 SARTHAK MISHRA</p>
+  </div>
+  </body>
+</html>
