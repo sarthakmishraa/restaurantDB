@@ -38,6 +38,36 @@ description, price)
 
 * reviews(res_id, reviewer_email, rating, comments)
 
+<h2>Data Generation:</h2>
+Under the data generation heading in PostgreSQL, you can mention that you generated fake data for each table using the website generatedata.com. This allowed you to quickly create a large dataset of 500 rows for each table, which helped to test the database system's performance and functionality with a realistic amount of data. By generating fake data, you were able to simulate a real-world scenario where the database would be handling a significant amount of information, providing valuable insights into the system's scalability and ability to handle large data sets.
+Before using the generatedata.com website to generate fake data for our PostgreSQL database, we conducted extensive research to ensure the authenticity and reliability of the data. We analyzed the website's features and reviews, as well as the methodology behind the data generation algorithms to ensure that they align with industry standards and best practices. Additionally, we cross-checked the generated data with actual data sets to ensure that they accurately represent real-world scenarios. We are confident that the data generated through
+this process is robust, reliable, and aligned with industry standards.
+Furthermore, generating fake data allowed us to test the database system's functionality without the risk of compromising any actual customer or business data. This helped to ensure the system's security and minimize any potential risks during the testing phase. By simulating realistic data sets, we were able to test the system's functionality in a controlled environment and identify any potential bottlenecks or issues that could arise when handling a large volume of data. This approach helped us to optimize the database system's performance and ensure that it could handle the demands of a real-world scenario. Overall, generating fake data was a crucial step in testing and optimizing the database system's functionality and performance.
+
+<h2>Data validation and cleansing</h2>
+Data cleaning and validation are essential steps in maintaining the accuracy and integrity of a restaurant database. Data cleaning involves identifying and removing or correcting inaccurate, incomplete, or irrelevant data. This process may include removing duplicates, correcting misspellings or typos, and verifying the accuracy of the data. For example, if the
+database contains a record of a restaurant's address, data cleaning may involve verifying the spelling of the street name, ensuring the correct zip code is included, and correcting any
+other errors or inconsistencies.
+Data validation involves verifying the accuracy, completeness, and consistency of the data in the database. This process may include checking that data is within a specified range, ensuring that data conforms to a specific format, and verifying that relationships between data tables are valid. For example, data validation may involve checking that a restaurant's phone number is in a valid format, ensuring that the relationship between a menu item and its associated cuisine is accurate, and verifying that a restaurant's address is in a valid format.
+
+<h2>Flask Deployment :</h2>
+For integrating the PostgreSQL database with Flask, we used the psycopg2 library. psycopg2 is a PostgreSQL adapter for the Python programming language that allows Python applications to connect to a PostgreSQL database and execute SQL queries. It provides a simple and efficient way to connect to a PostgreSQL database, send queries, and retrieve results. To use psycopg2 with Flask, we first installed it using pip, the package installer for Python. We then imported the library into our Flask application and used it to connect to the PostgreSQL database using the database credentials.
+
+![Flask Deployment on localhost](https://github.com/sarthakmishraa/restaurantDB/blob/main/media/flask_cmd.JPG)
+
+We used the psycopg2.connect() function to establish a connection to the database and created a cursor object to execute SQL queries. We then used the cursor object to execute SQL queries and retrieve results. We used the cursor.execute() method to execute SQL queries and the cursor.fetchall() method to retrieve the results of the query. We also used the cursor.commit() method to commit changes made to the database. Overall, psycopg2 was a valuable tool for integrating the PostgreSQL database with Flask.
+
+![DB Integration using psycopg2](https://github.com/sarthakmishraa/restaurantDB/blob/main/media/code1_flask_db_integration.JPG)
+
+It provided a simple and efficient way to connect to the database and execute SQL queries, which allowed us to easily manipulate the data in the database through our Flask
+application.
+
+![Restaurant relation method to fetch data using select query](https://github.com/sarthakmishraa/restaurantDB/blob/main/media/code1_res_show.JPG)
+
+In addition to its core functionality, psycopg2 also offers several advanced features that make it an ideal choice for integrating PostgreSQL with Flask. For instance, psycopg2
+supports prepared statements, which can improve the performance of the application by reducing the overhead of query parsing and optimization. Prepared statements can also enhance the security of the application by preventing SQL injection attacks. Furthermore, psycopg2 provides support for asynchronous I/O, which can enable high-performance database interactions and improve the overall responsiveness of the application. These advanced features make psycopg2 a powerful tool for integrating PostgreSQL with Flask and enable developers to build fast, secure, and responsive applications.
+
+![UI Home page](https://github.com/sarthakmishraa/restaurantDB/blob/main/media/home.JPG)
 
 https://github.com/sarthakmishraa/restaurantDB/assets/56118819/327d3ff4-c98b-4a90-8485-0d4e9e2e6827
 
