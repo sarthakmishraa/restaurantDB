@@ -53,21 +53,32 @@ Data validation involves verifying the accuracy, completeness, and consistency o
 <h2>Flask Deployment :</h2>
 For integrating the PostgreSQL database with Flask, we used the psycopg2 library. psycopg2 is a PostgreSQL adapter for the Python programming language that allows Python applications to connect to a PostgreSQL database and execute SQL queries. It provides a simple and efficient way to connect to a PostgreSQL database, send queries, and retrieve results. To use psycopg2 with Flask, we first installed it using pip, the package installer for Python. We then imported the library into our Flask application and used it to connect to the PostgreSQL database using the database credentials.
 
+
 ![Flask Deployment on localhost](https://github.com/sarthakmishraa/restaurantDB/blob/main/media/flask_cmd.JPG)
+
 
 We used the psycopg2.connect() function to establish a connection to the database and created a cursor object to execute SQL queries. We then used the cursor object to execute SQL queries and retrieve results. We used the cursor.execute() method to execute SQL queries and the cursor.fetchall() method to retrieve the results of the query. We also used the cursor.commit() method to commit changes made to the database. Overall, psycopg2 was a valuable tool for integrating the PostgreSQL database with Flask.
 
+
 ![DB Integration using psycopg2](https://github.com/sarthakmishraa/restaurantDB/blob/main/media/code1_flask_db_integration.JPG)
+
 
 It provided a simple and efficient way to connect to the database and execute SQL queries, which allowed us to easily manipulate the data in the database through our Flask
 application.
 
+
 ![Restaurant relation method to fetch data using select query](https://github.com/sarthakmishraa/restaurantDB/blob/main/media/code1_res_show.JPG)
+
 
 In addition to its core functionality, psycopg2 also offers several advanced features that make it an ideal choice for integrating PostgreSQL with Flask. For instance, psycopg2
 supports prepared statements, which can improve the performance of the application by reducing the overhead of query parsing and optimization. Prepared statements can also enhance the security of the application by preventing SQL injection attacks. Furthermore, psycopg2 provides support for asynchronous I/O, which can enable high-performance database interactions and improve the overall responsiveness of the application. These advanced features make psycopg2 a powerful tool for integrating PostgreSQL with Flask and enable developers to build fast, secure, and responsive applications.
 
+
 ![UI Home page](https://github.com/sarthakmishraa/restaurantDB/blob/main/media/home.JPG)
+
+
+![Data shown on web page which was fetched from DB](https://github.com/sarthakmishraa/restaurantDB/blob/main/media/res_rel.JPG)
+
 
 https://github.com/sarthakmishraa/restaurantDB/assets/56118819/327d3ff4-c98b-4a90-8485-0d4e9e2e6827
 
